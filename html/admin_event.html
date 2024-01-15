@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Events</title>
+    <link rel="stylesheet" href="../css/admin_event.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard - Events</h1>
+    </header>
+
+    <div class="events-container">
+        <h2>Events</h2>
+        <form id="eventsForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+
+            <div class="btn-container">
+                <button type="button" class="btn" onclick="addEvent()">Add Event</button>
+                <button type="button" class="btn" onclick="showEditEvents()">Edit/Remove Event</button>
+            </div>
+        </form>
+
+        <h2>Current Events</h2>
+        <ul id="currentEventsList"></ul>
+
+        <div id="successMessage" class="success-message"></div>
+    </div>
+
+    <div class="buttons">
+        <a href="admin_dashboard.html" class="btn">Back to Dashboard</a>
+    </div>
+
+    <div id="editEventsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Edit/Remove Event</h2>
+            <ul id="editEventsList"></ul>
+        </div>
+    </div>
+
+    <script src="../js/admin_event.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin_login.css">
+    <title>Admin Login - Event Management System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Login</h1>
+        <form id="adminLoginForm" onsubmit="return validateAdminLogin()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="buttons">
+                <a href="index.html" class="btn">Home</a>
+                <button type="submit" class="btn">Login</button>
+            </div>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+
+    <script src="../js/admin_login.js"></script>
+</body>
+</html>

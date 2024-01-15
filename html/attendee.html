@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendee Request Form</title>
+    <link rel="stylesheet" href="../css/attendee.css">
+</head>
+<body>
+    <header>
+        <h1>Register Now!</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="attendeeForm">
+            <label for="event">Event:</label>
+            <select id="event" name="event" required>
+                <option value="" disabled selected>Select an event</option>
+            </select>
+
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <label for="studentNumber">Student Number:</label>
+            <input type="text" id="studentNumber" name="studentNumber" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="yearSection">Year and Section:</label>
+            <input type="text" id="yearSection" name="yearSection" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="btn-container">
+                <button type="button" class="btn" onclick="addRequest()">Add Request</button>
+                <button type="button" class="btn" onclick="clearForm()">Clear All</button>
+                <a href="index.html" class="btn">Home</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/attendee.js"></script>
+</body>
+</html>
